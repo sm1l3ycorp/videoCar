@@ -38,7 +38,6 @@ router.get('/move/:direction', function(req, res, next) {
                                 motor2IN1.digitalWrite(0);
                                 motor2IN2.digitalWrite(0);
                                 break;
-
                 }
           }
           res.json(`moving ${req.params.direction}`);
@@ -46,6 +45,5 @@ router.get('/move/:direction', function(req, res, next) {
           req.json(err);
         }
 });
-
 
 module.exports = router;

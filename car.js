@@ -24,11 +24,11 @@ router.get('/move/:direction', function(req, res, next) {
                                 motor2IN1.digitalWrite(1);
                                 motor2IN2.digitalWrite(0);
                                 break;
-                        case 'left':
+                        case 'right':
                                 motor1IN1.digitalWrite(1);
                                 motor1IN2.digitalWrite(0);
                                 break;
-                        case 'right':
+                        case 'left':
                                 motor2IN1.digitalWrite(0);
                                 motor2IN2.digitalWrite(1);
                                 break;
